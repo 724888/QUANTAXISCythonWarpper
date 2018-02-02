@@ -56,3 +56,43 @@ cdef class WaveFunction(Function):
     @period.setter
     def period(self, value):
         self.freq = 1.0 / value
+
+
+cdef class QACQuotation:
+    """quotation cython accelerator
+    """
+
+    cdef public double open_price
+    cdef public double high_price
+    cdef public double low_price
+    cdef public double close_price
+    cdef public double volume
+    cdef public double amount
+    cdef public char code
+    cdef public char datetime
+    cdef public char time
+    cdef public char date
+    cdef public double last_close
+    cdef public double bid1_price
+    cdef public double bid1_volume
+    cdef public double ask1_price
+    cdef public double ask1_volume
+    cdef public double bid2_price
+    cdef public double bid2_volume
+    cdef public double ask2_price
+    cdef public double ask2_volume
+    cdef public double bid3_price
+    cdef public double bid3_volume
+    cdef public double ask3_price
+    cdef public double ask3_volume
+    cdef public double bid4_price
+    cdef public double bid4_volume
+    cdef public double ask4_price
+    cdef public double ask4_volume
+    cdef public double bid5_price
+    cdef public double bid5_volume
+    cdef public double ask5_price
+    cdef public double ask5_volume
+
+
+
