@@ -1,5 +1,15 @@
+# encoding: utf-8
 # cython: profile=True
-import cython
+# cython: linetrace=True
+# distutils: define_macros=CYTHON_TRACE_NOGIL=1
+
+
+cimport cython
+
+@cython.profile(False)
+def my_often_called_function():
+   pass
+
 
 cdef extern from"stdio.h":
     extern int printf(const char *format, ...) 

@@ -3,9 +3,9 @@ from distutils.extension import Extension
 from Cython.Build import cythonize
  
 setup(
-  name = 'helloworld',
+  name = 'qatest',
   ext_modules=cythonize([
-    Extension("helloworld", ["helloworld.pyx"]),
+    Extension("qatest", ["qatest.pyx"]),
     ]),
 )
  
