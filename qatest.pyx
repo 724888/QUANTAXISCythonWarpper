@@ -95,4 +95,9 @@ cdef class QACQuotation:
     cdef public double ask5_volume
 
 
+    cdef public struct quotation{
+
+    }
+
+    cpdef struct receive_data(self,)
 
